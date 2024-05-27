@@ -1,0 +1,103 @@
+#divOverlay{
+    width: 90%;
+    height: 30%;
+    background-color: white;
+    align-items: center;
+    justify-content: initial ;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0 7rem 0;
+
+}
+
+#overlay img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 0.5rem;
+
+}
+
+.txtOverlay{
+    font-family: "Great Vibes", sans-serif;
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 1.2rem;
+}
+
+.btnLink{
+    background-color: #000000;
+    font-size: 1rem;
+    font-family: DMSerif, sans-serif;
+    padding: 0.8rem ;
+    color: #ffffff;
+    border-radius: 0.2rem;
+    margin: 2.2rem;
+}
+
+#decompte{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    margin-bottom: 3rem;
+}
+.elementDecompte{
+    margin-right: 1rem;
+    border: 2px solid #eec7cc;
+    width: 60px; /* Largeur fixe pour une taille uniforme */
+    height: 50px; /* Hauteur fixe pour une taille uniforme */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.elementDecompte2{
+    border: 2px solid #eec7cc;
+    width: 60px; /* Largeur fixe pour une taille uniforme */
+    height: 50px; /* Hauteur fixe pour une taille uniforme */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.texteDecompte{
+    font-family: pinyon, sans-serif;
+    font-size: 1.2rem;
+    color: #cac4e2;
+}
+.chiffreDecompte{
+    color: #cac4e2;
+    font-family: DMSerif,sans-serif;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.navbar {
+background-image: url("/img/marbreNoir.jpg");
+    background-size: cover;
+    overflow: hidden;
+    height: 60px; /* Définit une hauteur fixe pour la navbar */
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments de la navbar */
+    box-shadow: 0 2px 6px rgb(131, 131, 131); /* Ajoute une ombre en bas */
+    padding: 0.5rem;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.navbar img {
+    height: 200%;
+    width: auto;
+}
+
+
+
+

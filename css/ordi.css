@@ -1,0 +1,113 @@
+#divOverlay{
+    width: 73%;
+    height: 72%;
+    background-color: white;
+    align-items: center;
+    justify-content: initial ;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 7rem 0;
+
+}
+
+#divOverlay img{
+    height: 17vw;
+    width: auto;
+
+}
+
+.txtOverlay{
+    font-family: pinyon, sans-serif;
+    font-size: 6vw;
+    color: #cac4e2;
+    margin-bottom: 1.2rem;
+}
+
+.btnLink{
+    background-color: #f0c9ce;
+    font-size: 1rem;
+    font-family: DMSerif, sans-serif;
+    padding: 0.8vw ;
+    color: #ffffff;
+    border-radius: 0.2rem;
+    margin: 2.2rem;
+}
+
+#decompte{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    margin-bottom: 4vw;
+}
+.elementDecompte{
+    margin-right: 1rem;
+    border: 2px solid #eec7cc;
+    width: 16vw; /* Largeur fixe pour une taille uniforme */
+    height: 9vw ;/* Hauteur fixe pour une taille uniforme */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.elementDecompte2{
+    border: 2px solid #eec7cc;
+    width: 17vw; /* Largeur fixe pour une taille uniforme */
+    height: 9vw ;/* Hauteur fixe pour une taille uniforme */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.texteDecompte{
+    font-family: pinyon, sans-serif;
+    font-size: 2.4vw;
+    color: #cac4e2;
+}
+.chiffreDecompte{
+    color: #cac4e2;
+    font-family: DMSerif,sans-serif;
+    font-size: 3vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.navbar {
+    background-color: #cac4e2;
+    overflow: hidden;
+    height: 60px; /* Définit une hauteur fixe pour la navbar */
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments de la navbar */
+    box-shadow: 0 2px 6px rgb(131, 131, 131); /* Ajoute une ombre en bas */
+    padding: 0.5rem;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-right: 1rem;
+
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: cormorand,sans-serif;
+    font-size: 1.2rem;
+}
+
