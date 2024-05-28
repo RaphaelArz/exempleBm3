@@ -155,19 +155,114 @@
         <a href="https://www.waze.com/fr/live-map/directions/fr/idf/saint-brice-sous-foret/14-rue-des-rouges-gorges?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJd5IrmOxp5kcR8grq5KE7psk"
            class="btnLink">Voir l'itinéraire
         </a>
-
-
-
-
     </div>
+
+    <div class="element">
+        <a class="fade-in titre" >Récéption</a>
+        <a class="fade-in txtDroit">Daniel et Séverine</a>
+        <a class="fade-in txtDroit">seraient heureux de vous recevoir le</a>
+
+        <a class="fade-in txtDroitGras" >Dimanche 26 mars 2025</a>
+
+        <a class="fade-in txtDroit">pour la récéption organisée en l'honneur de</a>
+        <a class="fade-in txtItalic"style="font-size: 18vw" >Gabriel</a>
+        <a class="fade-in txtDroit">en la salle Royal garden</a>
+        <a class="fade-in txtDroit"> Rue de la Sucrerie, 95380 Villeron</a>
+        <a class="fade-in txtDroit" >ambiance assurée !</a>
+
+        <br>
+        <a href="https://www.waze.com/fr/live-map/directions/royal-garden-rue-de-la-sucrerie-villeron?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.w.1638891.16585514.9238583"
+           class="btnLink">Voir l'itinéraire</a>
+    </div>
+
+   <div class="element">
+       <a class="titre">Réponse</a>
+
+
+       <form id="myForm" action="send_email.php" method="post">
+           <div class="form-group">
+               <label for="nom">Nom:</label>
+               <input type="text" id="nom" name="nom" required>
+           </div>
+           <div class="form-group">
+               <label for="prenom">Prénom:</label>
+               <input type="text" id="prenom" name="prenom" required>
+           </div>
+           <div class="checkbox-group">
+               <input type="checkbox" id="ne-pourront-assister" name="ne-pourront-assister">
+               <label for="ne-pourront-assister">Ne pourront pas assister</label>
+           </div>
+           <div class="checkbox-group">
+               <input type="checkbox" id="reception" name="reception">
+               <label for="reception">Assisteront à la réception</label>
+           </div>
+           <div id="receptionField" class="hidden">
+               <div>
+                   <label for="nombreAdultesReception">Nombre d'adultes à la réception:</label>
+                   <input type="number" id="nombreAdultesReception" name="nombreAdultesReception" min="0">
+               </div>
+               <div>
+                   <label for="nombreEnfantsReception">Nombre d'enfants à la réception:</label>
+                   <input type="number" id="nombreEnfantsReception" name="nombreEnfantsReception" min="0">
+               </div>
+           </div>
+           <div class="checkbox-group">
+               <input type="checkbox" id="chabbat" name="chabbat">
+               <label for="chabbat">Assisteront au chabbat</label>
+           </div>
+           <div id="chabbatField" class="hidden">
+               <div>
+                   <label for="nombreAdultesChabbat">Nombre d'adultes au chabbat:</label>
+                   <input type="number" id="nombreAdultesChabbat" name="nombreAdultesChabbat" min="0">
+               </div>
+               <div>
+                   <label for="nombreEnfantsChabbat">Nombre d'enfants au chabbat:</label>
+                   <input type="number" id="nombreEnfantsChabbat" name="nombreEnfantsChabbat" min="0">
+               </div>
+           </div>
+           <div class="form-group">
+               <label for="message">Message pour Gabriel:</label>
+               <textarea id="message" name="message" placeholder="Mazal tov Gabriel !" rows="4"></textarea>
+           </div>
+           <input class="btnLink" type="submit" value="Envoyer">
+       </form>
+   </div>
+
 </div>
 
 
 <audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const receptionCheckbox = document.getElementById('reception');
+        const chabbatCheckbox = document.getElementById('chabbat');
+        const receptionField = document.getElementById('receptionField');
+        const chabbatField = document.getElementById('chabbatField');
+
+        receptionCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                receptionField.classList.remove('hidden');
+            } else {
+                receptionField.classList.add('hidden');
+            }
+        });
+
+        chabbatCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                chabbatField.classList.remove('hidden');
+            } else {
+                chabbatField.classList.add('hidden');
+            }
+        });
+    });
+</script>
+
+
 <script defer src="/js/coche.js"></script>
 <script defer src="/js/audio.js"></script>
+<script defer src="/js/sheet.js"></script>
 
 <script defer src="/js/countDown.js"></script>
 <script defer src="/js/script.js"></script>

@@ -98,7 +98,7 @@
 .navbar {
     background-color: black;
     overflow: hidden;
-    height: 80px; /* Définit une hauteur fixe pour la navbar */
+    height: 70px; /* Définit une hauteur fixe pour la navbar */
     display: flex;
     align-items: center; /* Centre verticalement les éléments de la navbar */
     box-shadow: 0 2px 6px rgba(255, 255, 255, 0.56); /* Ajoute une ombre en bas */
@@ -123,6 +123,7 @@
     display: flex;
     flex-direction: column;
     padding: 4rem 1rem 3rem 1rem;
+    text-align: center;
 }
 
 /* Animation keyframes */
@@ -148,13 +149,13 @@
 /* Base animation class */
 .fade-in {
     opacity: 0; /* Elements are initially invisible */
-    transition: opacity 0.5s ease-in; /* Optional: smooth transition for visibility change */
+    transition: opacity 0.1s ease-in; /* Optional: smooth transition for visibility change */
 }
 
 /* Existing text classes */
 .txtItalic {
     font-family: pinyon, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: #ffffff;
     margin-bottom: 1.5rem;
 }
@@ -196,4 +197,86 @@
 .oukchartam{
     width: 95%;
     height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 80%;
+
+
+
+}
+
+form label {
+    font-family: DMSerif, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+
+}
+
+form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+form input[type="submit"] {
+    font-size: 1rem;
+    font-family: DMSerif, sans-serif;
+    padding: 0.8rem ;
+    color: #ffffff;
+    border-radius: 0.2rem;
+    margin: 2.2rem;
+    border: 2px solid #ffffff; /* Ajoute une bordure blanche de 2 pixels */
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+
+
+}
+
+form input[type="submit"]:hover {
+    font-size: 1rem;
+    font-family: DMSerif, sans-serif;
+    padding: 0.8rem ;
+    color: #ffffff;
+    border-radius: 0.2rem;
+    margin: 2.2rem;
+    border: 2px solid #ffffff; /* Ajoute une bordure blanche de 2 pixels */
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+form textarea {
+    resize: vertical;
+}
+.hidden{
+    display: none;
 }

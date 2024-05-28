@@ -1,7 +1,7 @@
 // Sélection des cases à cocher
 var nePourrontAssisterCheckbox = document.getElementById('ne-pourront-assister');
 var receptionCheckbox = document.getElementById('reception');
-var tephilineCheckbox = document.getElementById('tephiline');
+var tephilineCheckbox = document.getElementById('chabbat');
 
 // Écouteurs d'événements sur le changement des cases à cocher
 receptionCheckbox.addEventListener('change', function() {
@@ -13,7 +13,7 @@ receptionCheckbox.addEventListener('change', function() {
 
 tephilineCheckbox.addEventListener('change', function() {
     // Si "Assisteront à la mise des téphiline" est cochée, décocher "Ne pourront pas assister"
-    if (tephilineCheckbox.checked) {
+    if (tephilineCheckbox.checked || receptionCheckbox.checked) {
         nePourrontAssisterCheckbox.checked = false;
     }
 });
