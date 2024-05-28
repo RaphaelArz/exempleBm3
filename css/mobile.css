@@ -98,7 +98,7 @@
 .navbar {
     background-color: black;
     overflow: hidden;
-    height: 60px; /* Définit une hauteur fixe pour la navbar */
+    height: 80px; /* Définit une hauteur fixe pour la navbar */
     display: flex;
     align-items: center; /* Centre verticalement les éléments de la navbar */
     box-shadow: 0 2px 6px rgba(255, 255, 255, 0.56); /* Ajoute une ombre en bas */
@@ -160,7 +160,8 @@
     display: flex;
     flex-direction: column;
     font-family: "Great Vibes",sans-serif;
-    font-size: 15vw;
+    font-size: 16vw;
     color: #ffffff;
+    margin-bottom: 2rem;
 
 }
