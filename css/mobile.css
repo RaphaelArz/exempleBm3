@@ -1,12 +1,12 @@
 #divOverlay{
     width: 90%;
-    height: 40%;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.36);
     align-items: center;
     justify-content: initial ;
     display: flex;
     flex-direction: column;
-    padding: 3rem 0 7rem 0;
+    padding: 3rem 0 3rem 0;
 
 }
 
