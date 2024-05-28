@@ -1,6 +1,20 @@
 document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Empêche l'envoi du formulaire traditionnel
 
+    // Création de l'élément de message "Envoi en cours"
+    var sendingMessage = document.createElement('div');
+    sendingMessage.textContent = 'Envoi en cours...';
+    sendingMessage.style.position = 'fixed';
+    sendingMessage.style.top = '50%';
+    sendingMessage.style.left = '50%';
+    sendingMessage.style.transform = 'translate(-50%, -50%)';
+    sendingMessage.style.backgroundColor = '#4CAF50';
+    sendingMessage.style.color = 'white';
+    sendingMessage.style.padding = '20px';
+    sendingMessage.style.borderRadius = '10px';
+    sendingMessage.style.zIndex = '9999';
+    document.body.appendChild(sendingMessage);
+
     var formData = new FormData(event.target);
     var data = {};
     formData.forEach((value, key) => data[key] = value);
@@ -13,13 +27,20 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         },
         body: new URLSearchParams(data)
     })
-        .then(response => response.text())
-        .then(data => {
-            alert('Réponse envoyée avec succès');
+        .then(response => {
+                sendingMessage.textContent = 'Envoyé avec succès!';
+                sendingMessage.style.backgroundColor = '#4CAF50'; // Vert pour succès
+
+            setTimeout(function() {
+                sendingMessage.remove(); // Supprimer le message après 5 secondes
+            }, 5000);
         })
         .catch(error => {
             console.error('Erreur:', error);
-            alert('Erreur lors de la soumission du formulaire');
+            sendingMessage.textContent = 'Erreur lors de l\'envoi du formulaire.';
+            sendingMessage.style.backgroundColor = '#f44336'; // Fond rouge en cas d'erreur
+            setTimeout(function() {
+                sendingMessage.remove(); // Supprimer le message après 5 secondes
+            }, 5000);
         });
 });
-
