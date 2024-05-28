@@ -85,7 +85,7 @@ body{
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   background-size: cover;
-  background-image: url("/img/fondMarbreBlanc.png");
+  background-image: url("/img/paterneMarbeNoirBlanc.jpg");
 
 }
 
@@ -110,7 +110,7 @@ span {
 }
 
 #principale{
-  background-image: url("/img/fondMarbreBlanc.png");
+  background-image: url("/img/paterneMarbeNoirBlanc.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -118,8 +118,6 @@ span {
   justify-content: center; /* Centre l'élément principal horizontalement */
   align-items: center;
   flex-direction: row;
-
-
 }
 
 
