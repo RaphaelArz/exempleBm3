@@ -37,6 +37,12 @@
   font-weight: bold;
   src:  url('/police/DMSerifDisplay-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Membra';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/membra.ttf') format('truetype');
+}
 
 @font-face {
   font-family: 'pinyon';
@@ -95,14 +101,12 @@ footer {
 background-image: linear-gradient(rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.32)) ,url("/img/paterneMarbeNoirBlanc.jpg");
   padding: 20px; /* Espacement intérieur pour un meilleur aspect */
 }
-
-
-
 span {
   color: #333; /* Couleur du texte */
-  font-size: 1rem; /* Taille du texte */
+  font-size: 1.5rem; /* Taille du texte */
   display: block; /* Pour que le texte apparaisse sur une ligne séparée */
   margin-bottom: 10px; /* Espacement entre le texte et l'icône Instagram */
+  font-family: Membra;
 }
 
 .instagram-logo {
