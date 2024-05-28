@@ -90,8 +90,9 @@ body{
 }
 
 footer {
+
   text-align: center;
-background-color: white;
+background-image: linear-gradient(rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.32)) ,url("/img/paterneMarbeNoirBlanc.jpg");
   padding: 20px; /* Espacement intérieur pour un meilleur aspect */
 }
 
@@ -117,7 +118,8 @@ span {
   display: flex;
   justify-content: center; /* Centre l'élément principal horizontalement */
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+
 }
 
 

@@ -32,6 +32,7 @@
     border-radius: 0.2rem;
     margin: 2.2rem;
     border: 2px solid #ffffff; /* Ajoute une bordure blanche de 2 pixels */
+    text-decoration: none;
 
 }
 .btnLink:hover{
@@ -60,18 +61,20 @@
 }
 .elementDecompte{
     margin-right: 1rem;
-    border: 2px solid #eec7cc;
-    width: 60px; /* Largeur fixe pour une taille uniforme */
-    height: 50px; /* Hauteur fixe pour une taille uniforme */
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    width: 70px; /* Largeur fixe pour une taille uniforme */
+    height: 70px; /* Hauteur fixe pour une taille uniforme */
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
 .elementDecompte2{
-    border: 2px solid #eec7cc;
-    width: 60px; /* Largeur fixe pour une taille uniforme */
-    height: 50px; /* Hauteur fixe pour une taille uniforme */
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    width: 70px; /* Largeur fixe pour une taille uniforme */
+    height: 70px; /* Hauteur fixe pour une taille uniforme */
     align-items: center;
     justify-content: center;
     display: flex;
@@ -79,14 +82,14 @@
 
 }
 .texteDecompte{
-    font-family: pinyon, sans-serif;
-    font-size: 1.2rem;
-    color: #cac4e2;
+    font-family: DMSerif, sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
 }
 .chiffreDecompte{
-    color: #cac4e2;
+    color: #ffffff;
     font-family: DMSerif,sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -98,20 +101,66 @@
     height: 60px; /* Définit une hauteur fixe pour la navbar */
     display: flex;
     align-items: center; /* Centre verticalement les éléments de la navbar */
-    box-shadow: 0 2px 6px rgb(131, 131, 131); /* Ajoute une ombre en bas */
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.56); /* Ajoute une ombre en bas */
     padding: 0.5rem;
     justify-content: center;
     position: fixed;
     width: 100%;
     z-index: 1000;
-
 }
 
 .navbar img {
-    height: 200%;
+    height: 140%;
     width: auto;
 }
+.element{
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.56); /* Ajoute une ombre en bas */
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem 3rem 1rem;
+}
+
+.txtItalic{
+    font-family: pinyon,sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.txtDroit {
+    font-weight: bolder;
+
+    font-family: cormorand, sans-serif;
+    font-style: italic;
+    font-size: 6.5vw;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+
+}
+
+.txtDroitGras {
+    font-family: DMSerif, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #d7d7d7;
 
 
 
+}
+.titre{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Great Vibes",sans-serif;
+    font-size: 15vw;
+    color: #ffffff;
 
+}
