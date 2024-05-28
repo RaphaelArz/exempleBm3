@@ -11,6 +11,14 @@
   src:  url('/police/BRUSHSCI.TTF') format('truetype');
 }
 @font-face {
+  font-family: 'Amsterdam';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/Amsterdam.ttf') format('truetype');
+}
+
+
+@font-face {
   font-family: 'Great Vibes';
   font-style: normal;
   font-weight: normal;
@@ -47,7 +55,7 @@
 
 /* Styles for the overlay */
 #overlay {
-  background-image: url("/img/marbreBlanc.jpg");
+  background-image: url("/img/paterneMarbeNoirBlanc.jpg");
   background-size: cover;
   background-position: top;
   position: fixed;

@@ -1,7 +1,7 @@
 #divOverlay{
     width: 90%;
-    height: 30%;
-    background-color: white;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.36);
     align-items: center;
     justify-content: initial ;
     display: flex;
@@ -20,7 +20,7 @@
 .txtOverlay{
     font-family: "Great Vibes", sans-serif;
     font-size: 3rem;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 1.2rem;
 }
 
