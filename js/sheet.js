@@ -13,6 +13,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     sendingMessage.style.padding = '20px';
     sendingMessage.style.borderRadius = '10px';
     sendingMessage.style.zIndex = '9999';
+    sendingMessage.style.border = '3px solid white';
     document.body.appendChild(sendingMessage);
 
     var formData = new FormData(event.target);

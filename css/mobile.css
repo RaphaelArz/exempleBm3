@@ -24,30 +24,24 @@
     margin-bottom: 1.2rem;
 }
 
-.btnLink{
+.btnLink {
     font-size: 1rem;
-    font-family: DMSerif, sans-serif;
-    padding: 0.8rem ;
+    font-family: 'DMSerif', sans-serif;
+    padding: 0.8rem;
     color: #ffffff;
     border-radius: 0.2rem;
     margin: 2.2rem;
     border: 2px solid #ffffff; /* Ajoute une bordure blanche de 2 pixels */
     text-decoration: none;
-
+    background-color: transparent;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, transform 0.5s ease;
 }
-.btnLink:hover{
-    background-color: white;
-    font-size: 1rem;
-    font-family: DMSerif, sans-serif;
-    padding: 0.8rem ;
+
+.btnLink:hover {
+    background-color: #ffffff;
     color: #000000;
-    border-radius: 0.2rem;
-    margin: 2.2rem;
-    border: 3px solid #000000; /* Ajoute une bordure blanche de 2 pixels */
-    transition: background-position 1s ease-in-out, color 0.3s, border-color 0.3s; /* Transition douce pour les changements de couleur et l'animation */
-    background-position: left bottom;
-
-
+    border: 2px solid #000000; /* Ajoute une bordure noire de 2 pixels */
+    transform: scale(1.05); /* Légère mise à l'échelle pour un effet de grossissement */
 }
 
 #decompte{
