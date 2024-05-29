@@ -135,5 +135,16 @@ span {
   overflow: hidden;
 }
 
+.star-of-david {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('/img/maguenDavidBlanche.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 1000;
+}
+
 
 
