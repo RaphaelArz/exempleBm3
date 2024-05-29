@@ -1,10 +1,10 @@
 document.getElementById('addEventButton').addEventListener('click', function(event) {
     event.preventDefault();
-    const eventTitle = 'Mon Événement';
-    const eventLocation = '123 Rue Exemple, Ville, Pays';
-    const eventDetails = 'Description de l\'événement.';
-    const eventStart = '20240615T090000Z';
-    const eventEnd = '20240615T110000Z';
+    const eventTitle = 'Bar-Mitsvah Gabriel';
+    const eventLocation = '14 Rue des Rouges Gorges, Saint-Brice sous-foret';
+    const eventDetails = 'Mise des téphilines de Gabriel.';
+    const eventStart = '20250323T083000Z';
+    const eventEnd = '20250323T113000Z';
 
     const calendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${eventStart}/${eventEnd}&details=${encodeURIComponent(eventDetails)}&location=${encodeURIComponent(eventLocation)}&sf=true&output=xml`;
 

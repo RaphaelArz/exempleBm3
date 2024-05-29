@@ -98,11 +98,11 @@ body{
 footer {
 
   text-align: center;
-background-image: linear-gradient(rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.32)) ,url("/img/paterneMarbeNoirBlanc.jpg");
+background-image: url("/img/paterneMarbeNoirBlanc.jpg");
   padding: 20px; /* Espacement intérieur pour un meilleur aspect */
 }
 span {
-  color: #333; /* Couleur du texte */
+  color: #ffffff; /* Couleur du texte */
   font-size: 1.5rem; /* Taille du texte */
   display: block; /* Pour que le texte apparaisse sur une ligne séparée */
   margin-bottom: 10px; /* Espacement entre le texte et l'icône Instagram */
@@ -110,7 +110,7 @@ span {
 }
 
 .instagram-logo {
-  height: 1rem; /* Taille de l'icône Instagram */
+  height: 1.3rem; /* Taille de l'icône Instagram */
   width: auto; /* Ajustement automatique de la largeur */
 }
 
