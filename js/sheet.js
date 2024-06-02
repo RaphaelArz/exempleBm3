@@ -20,7 +20,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     var data = {};
     formData.forEach((value, key) => data[key] = value);
 
-    fetch('https://script.google.com/macros/s/AKfycbwlQp3Ize5tfgAzOJt0cpewv9VtKzfK8K8wcX4hdnTeabUEN76NmqD2qzJEMfR1jZ2Jxw/exec', { // Remplacez par l'URL de déploiement du script Google Apps
+    fetch('https://script.google.com/macros/s/AKfycbyQWcf49AwsgJzHUqx5E-Uo4hIglm8vcLt49Zk_MDhK776grPfVRWzUwQEGoc3BLjutRw/exec', { // Remplacez par l'URL de déploiement du script Google Apps
         method: 'POST',
         mode: 'no-cors',
         headers: {

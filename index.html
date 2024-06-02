@@ -32,6 +32,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 
 </head>
 
@@ -48,7 +51,9 @@
         <br>
 
         <div>
-            <a class="btnLink" id="invitationButton" onclick="hideOverlay(); playMusic() "> <b>></b>
+            <a class="btnLink" id="invitationButton" onclick="hideOverlay(); playMusic() ">
+                <i class="fas fa-arrow-right"></i>
+
                 Voir l'invitation</a>
         </div>
 
@@ -113,7 +118,10 @@
             </div>
 
         </div>
-        <a href="#" id="addEventButton" class="btnLink">Ajouter à l'Agenda</a>
+        <a href="#" id="addEventButton" class="btnLink">
+            <i class="far fa-calendar-plus"> </i>
+            Ajouter à l'Agenda
+        </a>
 
 
     </div>
@@ -135,7 +143,9 @@
         <a class="txtDroit" >Un petit déjeuner suivra l'office</a>
         <br>
         <a href="https://www.waze.com/fr/live-map/directions/fr/idf/saint-brice-sous-foret/14-rue-des-rouges-gorges?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJd5IrmOxp5kcR8grq5KE7psk"
-           class="btnLink">Voir l'itinéraire
+           class="btnLink">
+            <i class="fab fa-waze"> </i>
+            Voir l'itinéraire
 
         </a>
 
@@ -158,7 +168,10 @@
         <br>
 
         <a href="https://www.waze.com/fr/live-map/directions/fr/idf/saint-brice-sous-foret/14-rue-des-rouges-gorges?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJd5IrmOxp5kcR8grq5KE7psk"
-           class="btnLink">Voir l'itinéraire
+           class="btnLink">
+            <i class="fab fa-waze"> </i>
+
+            Voir l'itinéraire
         </a>
     </div>
 
@@ -177,7 +190,10 @@
 
         <br>
         <a href="https://www.waze.com/fr/live-map/directions/royal-garden-rue-de-la-sucrerie-villeron?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.w.1638891.16585514.9238583"
-           class="btnLink">Voir l'itinéraire</a>
+           class="btnLink">
+            <i class="fab fa-waze"> </i>
+            Voir l'itinéraire
+        </a>
     </div>
 
    <div class="element">
@@ -229,7 +245,9 @@
                <label for="message">Message pour Gabriel:</label>
                <textarea id="message" name="message" placeholder="Mazal tov Gabriel !" rows="4"></textarea>
            </div>
-           <input class="btnLink" type="submit" value="Envoyer">
+           <button type="submit" class="btnLink">
+               <i class="fas fa-paper-plane"></i> Envoyer
+           </button>
        </form>
    </div>
 
