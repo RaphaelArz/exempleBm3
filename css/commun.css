@@ -114,6 +114,19 @@ span {
   width: auto; /* Ajustement automatique de la largeur */
 }
 
+
+.paralaxReception {
+  background-image: url("/img/party.jpg");
+  height: 250px; /* Hauteur fixe */
+  background-attachment: fixed; /* Effet de parallaxe */
+  background-position: center top; /* Position initiale */
+  background-repeat: no-repeat; /* Pas de répétition */
+  background-size: cover; /* Adapte la largeur à celle de l'écran */
+  overflow: hidden; /* Cache les parties non visibles */
+}
+
+
+
 #principale{
   background-image: url("/img/paterneMarbeNoirBlanc.jpg");
   background-size: cover;
